@@ -77,19 +77,21 @@ while(true){
                         print "--------------\n";
                              
                     }
+                    
                     $opValue = readline();
-                    if($opValue <= $Hkey and $opValue > 0){
-                        $key = $opValue;
+                    if($opValue == 0){
+                    break 3;
+                    }
+                    elseif($opValue <= $Hkey and $opValue > 0){
+                        $Ckey = $opValue;
                         break;
-                    }elseif($opValue == 0){
-                        break 2;
                     }
                     
                 }
                 system('clear');
                 $consumoVal = readline("Qual foi o seu consumo em Kwh de energia no mês?");
             }while(!is_numeric($consumoVal));
-            $consumidor[$key]->setConsumo($consumidor[$key]->getConsumo()+$consumoVal);
+            $consumidor[$Ckey]->setConsumo($consumidor[$Ckey]->getConsumo()+$consumoVal);
         break;
             
         case 2:
