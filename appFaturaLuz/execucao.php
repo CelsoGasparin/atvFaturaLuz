@@ -4,7 +4,8 @@
 require_once 'model/ConsumidorResid.php';
 require_once 'model/ConsumidorComer.php';
 require_once 'model/ConsumidorIndu.php';
-require_once '/home/omelby/fun/menuFun.php';
+require_once 'fun/menuFun.php';
+// require_once '/home/omelby/fun/menuFun.php';
 // require_once '/home/lab/fun/menuFun.php';  https://github.com/CelsoGasparin/montarMenu.git
 
 
